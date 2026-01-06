@@ -27,7 +27,11 @@ class App extends StatelessWidget {
           initialRoute: AppRoutes.splash,
           routes: AppRoutes.routes,
           theme: ThemeData(
-            scaffoldBackgroundColor: Colors.black
+            scaffoldBackgroundColor: Colors.black,
+            appBarTheme: AppBarTheme(
+              backgroundColor: Colors.black,
+
+            )
           ),
         );
       },

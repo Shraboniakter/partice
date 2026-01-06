@@ -46,20 +46,17 @@ class CustomTextfield extends StatelessWidget {
       controller: controller,
       keyboardType: keyboardType,
       validator: validator,
-      maxLines: max,
+      maxLines: obscureText == true ? 1 : max,
+
       obscureText: obscureText ?? false,
+
       decoration: InputDecoration(
         hintStyle:GoogleFonts.agdasima(
           fontSize: 16.sp,
-
-
         ) ,
-
         hintText: hintText,
-
         prefixIcon: icon,
         filled: true,
-
         fillColor: Colors.black,
         suffixIcon: suffix ?? icon,
         border: OutlineInputBorder(

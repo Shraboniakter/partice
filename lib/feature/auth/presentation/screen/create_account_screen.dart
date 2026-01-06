@@ -72,7 +72,7 @@ class _CreateAccountScreenState extends State<CreateAccountScreen> {
 
                       Navigator.pushNamed(
                           context,
-                          AppRoutes.onboardingScreen2
+                          AppRoutes.select_document_type_screen
                       );
 
                     },
@@ -90,6 +90,24 @@ class _CreateAccountScreenState extends State<CreateAccountScreen> {
                       fontWeight: FontWeight.w600,),
                   ),
                 ),
+                SizedBox(height: 24),
+                Row(
+                  mainAxisAlignment: MainAxisAlignment.center,
+                  children: [
+                    CustomText(text: "Already have an account? ",color: Colors.white,size: 20,),
+                    InkWell(
+                      onTap: (){
+                        Navigator.pushNamed(context, AppRoutes.loginScreen);
+                        print("shrabon");
+                      },
+                        child: CustomText(
+                          text: "Login",
+                          color:Color(0xffEDDF99),size: 20,),
+                    ),
+                  ],
+                ),
+
+                
 
 
 
