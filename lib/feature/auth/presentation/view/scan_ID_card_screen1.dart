@@ -127,7 +127,7 @@ class _ScanIdCardScreenState
                         const EdgeInsets.symmetric(vertical: 20),
                       ),
                       child: CustomText(
-                        text: "Continue",
+                        text: "Retake",
                         size: 16,
                         color: Colors.black,
                         fontWeight: FontWeight.w600,

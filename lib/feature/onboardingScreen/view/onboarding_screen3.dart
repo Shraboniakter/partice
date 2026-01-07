@@ -43,10 +43,15 @@ class OnboardingScreen3 extends ConsumerWidget {
                         ],
                       ),
                       const SizedBox(height: 24),
-                      CustomText(text: "Let’s Enjoy your favourite event with your friends",
+                      CustomText(text: "Let’s Enjoy your favourite \n event with your friends",
                         size: 30,
                         color: Colors.white,
                         fontWeight: FontWeight.bold,),
+                      const SizedBox(height: 8),
+                      CustomText(
+                        text: "It is a long established fact that a reader \n will be distracted by the readable content.",
+                        size: 16,color: Colors.white,
+                      ),
                       const Spacer(),
                       SizedBox(
                         width: double.infinity,

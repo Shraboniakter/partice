@@ -43,10 +43,15 @@ class OnboardingScreen2 extends ConsumerWidget {
                         ],
                       ),
                       const SizedBox(height: 24),
-                      CustomText(text: "Experience the ultimate event at your doorstep",
+                      CustomText(text: "Experience the ultimate event \n          at your doorstep",
                         size: 30,
                         color: Colors.white,
                         fontWeight: FontWeight.bold,),
+                      const SizedBox(height: 8),
+                      CustomText(
+                        text: "It is a long established fact that a reader \n will be distracted by the readable content.",
+                        size: 16,color: Colors.white,
+                      ),
                       const Spacer(),
                       SizedBox(
                         width: double.infinity,
@@ -67,7 +72,10 @@ class OnboardingScreen2 extends ConsumerWidget {
                               ),
                               padding: EdgeInsets.symmetric(vertical: 20)
                           ),
-                          child: const Text("Next",style: TextStyle(color: Colors.black,fontSize: 16,fontWeight: FontWeight.w600),),
+                          child: CustomText(text: "Next",
+                            size: 16,
+                            color: Colors.black,
+                            fontWeight: FontWeight.w600,),
                         ),
                       ),
                     ],

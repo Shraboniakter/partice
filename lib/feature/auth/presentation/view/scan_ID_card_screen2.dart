@@ -117,7 +117,7 @@ class _ScanIdCardScreenState extends ConsumerState<ScanIdCardScreen2> {
                           onPressed: () {
                             Navigator.pushNamed(
                               context,
-                              AppRoutes.scanIdCardScreen
+                              AppRoutes.scanIdCardScreen1
                             );
                           },
                           style: ElevatedButton.styleFrom(
