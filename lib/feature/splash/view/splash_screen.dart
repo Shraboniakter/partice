@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 
-import '../../core/util/assetpaths.dart';
-import '../../core/route/route.dart';
-import 'splash_controller.dart';
+import '../../../core/util/assetpaths.dart';
+import '../../../core/route/route.dart';
+import '../viewModel/splash_controller.dart';
 
 class SplashScreen extends ConsumerWidget {
   const SplashScreen({super.key});

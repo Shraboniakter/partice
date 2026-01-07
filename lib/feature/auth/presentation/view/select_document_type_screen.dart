@@ -76,7 +76,7 @@ class SelectDocumentTypeScreen extends ConsumerWidget {
                   onPressed: () {
                     Navigator.pushNamed(
                       context,
-                      AppRoutes.onboardingScreen2,
+                      AppRoutes.scanIdCardScreen
                     );
                   },
                   style: ElevatedButton.styleFrom(
