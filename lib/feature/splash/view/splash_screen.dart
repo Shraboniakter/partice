@@ -1,22 +1,28 @@
+import 'dart:async';
+
 import 'package:flutter/material.dart';
-import 'package:flutter_riverpod/flutter_riverpod.dart';
+import 'package:partice/core/route/route_name.dart';
 
 import '../../../core/util/assetpaths.dart';
-import '../../../core/route/route.dart';
-import '../viewModel/splash_controller.dart';
 
-class SplashScreen extends ConsumerWidget {
+class SplashScreen extends StatefulWidget {
   const SplashScreen({super.key});
 
   @override
-  Widget build(BuildContext context, WidgetRef ref) {
-    ref.read(splashControllerProvider.notifier).startTimer(() {
-      Navigator.pushReplacementNamed(
-        context,
-        AppRoutes.onboardingScreen1,
-      );
-    });
+  State<SplashScreen> createState() => _SplashScreenState();
+}
 
+class _SplashScreenState extends State<SplashScreen> {
+  @override
+  void initState() {
+   Timer(const Duration(seconds: 2),(){
+     Navigator.pushNamed(context,RouteName.onboardingScreen1);
+   });
+    super.initState();
+  }
+  @override
+
+  Widget build(BuildContext context) {
     return Scaffold(
       body: Container(
         decoration: BoxDecoration(

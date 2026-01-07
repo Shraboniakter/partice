@@ -3,6 +3,8 @@ import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 
 import 'core/route/route.dart';
+import 'core/route/route_import_path.dart';
+import 'core/route/route_name.dart';
 
 void main() {
   WidgetsFlutterBinding.ensureInitialized();
@@ -24,8 +26,8 @@ class App extends StatelessWidget {
         return MaterialApp(
           debugShowCheckedModeBanner: false,
           title: 'Buyer App',
-          initialRoute: AppRoutes.splash,
-          routes: AppRoutes.routes,
+          onGenerateRoute: AppRouter.generateRoute,
+          initialRoute: RouteName.splashScreen,
           theme: ThemeData(
             scaffoldBackgroundColor: Colors.black,
             appBarTheme: AppBarTheme(
