@@ -59,7 +59,7 @@ class _CreateAccountScreenState extends State<CreateAccountScreen> {
                   hintText: 'Select Date of Birth',
                 ),
                 SizedBox(height: 16,),
-                CustomText(text: "Date of Birth",color:Colors.grey.shade50,size: 14,),
+                CustomText(text: "Select Country",color:Colors.grey.shade50,size: 14,),
                 SizedBox(height: 4,),
                 CountryDropdown(),
                 SizedBox(height: 16,),
