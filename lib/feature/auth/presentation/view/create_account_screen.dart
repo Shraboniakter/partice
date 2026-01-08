@@ -5,7 +5,7 @@ import 'package:partice/core/global_widgets/Custom_textfield.dart';
 import 'package:partice/core/util/assetpaths.dart';
 import '../../../../core/global_widgets/Custom_country_dropdown.dart';
 import '../../../../core/global_widgets/State_&_City_Selector_ Row.dart';
-import '../../../../core/route/route.dart';
+import '../../../../core/route/route_name.dart';
 
 class CreateAccountScreen extends StatefulWidget {
   const CreateAccountScreen({super.key});
@@ -72,7 +72,7 @@ class _CreateAccountScreenState extends State<CreateAccountScreen> {
 
                       Navigator.pushNamed(
                           context,
-                          AppRoutes.select_document_type_screen
+                          RouteName.select_document_type_screen
                       );
 
                     },
@@ -97,7 +97,7 @@ class _CreateAccountScreenState extends State<CreateAccountScreen> {
                     CustomText(text: "Already have an account? ",color: Colors.white,size: 20,),
                     InkWell(
                       onTap: (){
-                        Navigator.pushNamed(context, AppRoutes.loginScreen);
+                        Navigator.pushNamed(context, RouteName.loginScreen);
                         print("shrabon");
                       },
                         child: CustomText(

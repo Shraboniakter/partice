@@ -1,8 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:partice/core/global_widgets/Custom_text.dart';
-
 import '../../../../core/global_widgets/Custom_textfield.dart';
-import '../../../../core/route/route.dart';
+import '../../../../core/route/route_name.dart';
 
 class ForgotPasswordEmailScreen extends StatelessWidget {
   const ForgotPasswordEmailScreen({super.key});
@@ -59,7 +58,7 @@ class ForgotPasswordEmailScreen extends StatelessWidget {
                     onPressed: () {
                       Navigator.pushNamed(
                         context,
-                        AppRoutes.onboardingScreen2,
+                        RouteName.emailVerificationScreen,
                       );
                     },
                     style: ElevatedButton.styleFrom(
@@ -86,7 +85,7 @@ class ForgotPasswordEmailScreen extends StatelessWidget {
                     CustomText(text: "Want to choose another way?  ",color: Colors.white,size: 20,),
                     InkWell(
                       onTap: (){
-                        Navigator.pushNamed(context, AppRoutes.forgotPasswordPhoneScreen);
+                        Navigator.pushNamed(context,  RouteName.forgotPasswordPhoneScreen);
                         print("shrabon");
                       },
                       child: CustomText(

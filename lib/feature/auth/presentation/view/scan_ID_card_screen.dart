@@ -4,7 +4,7 @@ import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:partice/core/global_widgets/Custom_text.dart';
 
 import '../../../../core/global_widgets/CornerPainter.dart';
-import '../../../../core/route/route.dart';
+import '../../../../core/route/route_name.dart';
 import '../viewModel/scan_id_provider.dart';
 
 
@@ -143,7 +143,7 @@ class _ScanIdCardScreenState
       onTap:(){
         Navigator.pushNamed(
             context,
-            AppRoutes.scanIdCardScreen1
+            RouteName.scanIdCardScreen1
         );
       },
 

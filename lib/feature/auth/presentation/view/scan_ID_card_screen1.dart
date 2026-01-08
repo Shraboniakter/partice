@@ -1,8 +1,7 @@
 import 'package:camera/camera.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
-
-import '../../../../core/route/route.dart';
+import '../../../../core/route/route_name.dart';
 import '../viewModel/scan_id_provider.dart';
 import '../../../../core/global_widgets/Custom_text.dart';
 
@@ -115,7 +114,7 @@ class _ScanIdCardScreenState
                       onPressed: () {
                         Navigator.pushNamed(
                           context,
-                          AppRoutes.scanIdCardScreen2
+                            RouteName.scanIdCardScreen2
                         );
                       },
                       style: ElevatedButton.styleFrom(

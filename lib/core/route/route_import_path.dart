@@ -1,6 +1,21 @@
-import 'package:flutter/cupertino.dart';
+
 import 'package:flutter/material.dart';
 import 'package:partice/core/route/route_name.dart';
+import 'package:partice/feature/auth/presentation/view/complete_your_profile_screen.dart';
+import 'package:partice/feature/auth/presentation/view/confirm_Identity_screen.dart';
+import 'package:partice/feature/auth/presentation/view/create_account_screen.dart';
+import 'package:partice/feature/auth/presentation/view/email_verification_screen.dart';
+import 'package:partice/feature/auth/presentation/view/forgot_password_email_screen.dart';
+import 'package:partice/feature/auth/presentation/view/forgot_password_phone_screen.dart';
+import 'package:partice/feature/auth/presentation/view/login_screen.dart';
+import 'package:partice/feature/auth/presentation/view/phone_verification_screen.dart';
+import 'package:partice/feature/auth/presentation/view/scan_ID_card_screen.dart';
+import 'package:partice/feature/auth/presentation/view/scan_ID_card_screen2.dart';
+import 'package:partice/feature/auth/presentation/view/select_document_type_screen.dart';
+import 'package:partice/feature/home/presentation/view/home_screen.dart';
+import 'package:partice/feature/onboardingScreen/view/onboarding_screen3.dart';
+import '../../feature/auth/presentation/view/scan_ID_card_screen1.dart';
 import '../../feature/onboardingScreen/view/onboarding_screen1.dart';
+import '../../feature/onboardingScreen/view/onboarding_screen2.dart';
 import '../../feature/splash/view/splash_screen.dart';
 part 'route_config.dart';

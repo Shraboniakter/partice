@@ -3,7 +3,7 @@ import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:partice/core/global_widgets/Custom_text.dart';
 
 import '../../../../core/global_widgets/CustomDot.dart';
-import '../../../../core/route/route.dart';
+import '../../../core/route/route_name.dart';
 
 class OnboardingScreen3 extends ConsumerWidget {
   const OnboardingScreen3({super.key});
@@ -60,7 +60,7 @@ class OnboardingScreen3 extends ConsumerWidget {
                             
                             Navigator.pushNamed(
                               context,
-                              AppRoutes.createAccountScreen,
+                              RouteName.createAccountScreen,
                             );
                             
                           },

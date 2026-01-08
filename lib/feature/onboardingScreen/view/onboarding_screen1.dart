@@ -1,8 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
+import 'package:partice/core/route/route_import_path.dart';
 import '../../../../core/global_widgets/CustomDot.dart';
 import '../../../../core/global_widgets/Custom_text.dart';
-import '../../../../core/route/route.dart';
+import 'package:partice/core/route/route_name.dart';
+
 
 class OnboardingScreen1 extends ConsumerWidget {
   const OnboardingScreen1({super.key});
@@ -57,7 +59,7 @@ class OnboardingScreen1 extends ConsumerWidget {
 
                             Navigator.pushNamed(
                               context,
-                              AppRoutes.onboardingScreen2
+                                RouteName.onboardingScreen2
                             );
 
                           },

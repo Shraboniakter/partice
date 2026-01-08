@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/legacy.dart';
 import '../../../../core/global_widgets/Custom_text.dart';
 import '../../../../core/global_widgets/Custom_textfield.dart';
-import '../../../../core/route/route.dart';
+import '../../../../core/route/route_name.dart';
 import '../../../../core/util/assetpaths.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 
@@ -87,7 +87,7 @@ class LoginScreen extends ConsumerWidget {
                   children: [
                     InkWell(
                       onTap: (){
-                        Navigator.pushNamed(context, AppRoutes.forgotPasswordEmailScreen);
+                        Navigator.pushNamed(context,  RouteName.forgotPasswordEmailScreen);
 
                       },
 
@@ -102,7 +102,7 @@ class LoginScreen extends ConsumerWidget {
                     onPressed: () {
                       Navigator.pushNamed(
                         context,
-                        AppRoutes.onboardingScreen2,
+                        RouteName.homeScreen
                       );
                     },
                     style: ElevatedButton.styleFrom(
@@ -129,7 +129,7 @@ class LoginScreen extends ConsumerWidget {
                     CustomText(text: "Don’t have an account?  ",color: Colors.white,size: 20,),
                     InkWell(
                       onTap: (){
-                        Navigator.pushNamed(context, AppRoutes.createAccountScreen);
+                        Navigator.pushNamed(context,  RouteName.createAccountScreen);
                         print("shrabon");
                       },
                       child: CustomText(

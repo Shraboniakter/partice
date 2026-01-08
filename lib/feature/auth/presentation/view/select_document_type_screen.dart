@@ -3,7 +3,8 @@ import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:flutter_riverpod/legacy.dart';
 import 'package:partice/core/global_widgets/Custom_text.dart';
 import '../../../../core/global_widgets/DocumentCard.dart';
-import '../../../../core/route/route.dart';
+
+import '../../../../core/route/route_name.dart';
 
 final selectedDocumentProvider =
 StateProvider<String>((ref) => 'National ID Card');
@@ -76,7 +77,7 @@ class SelectDocumentTypeScreen extends ConsumerWidget {
                   onPressed: () {
                     Navigator.pushNamed(
                       context,
-                      AppRoutes.scanIdCardScreen
+                        RouteName.scanIdCardScreen
                     );
                   },
                   style: ElevatedButton.styleFrom(

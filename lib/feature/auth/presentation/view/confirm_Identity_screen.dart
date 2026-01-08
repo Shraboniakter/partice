@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import '../../../../core/global_widgets/Custom_text.dart';
-import '../../../../core/route/route.dart';
+import '../../../../core/route/route_name.dart';
 class ConfirmIdentityScreen extends StatelessWidget {
   const ConfirmIdentityScreen({super.key});
 
@@ -89,7 +89,7 @@ class ConfirmIdentityScreen extends StatelessWidget {
                   onPressed: () {
                     Navigator.pushNamed(
                       context,
-                      AppRoutes.completeYourProfileScreen
+                        RouteName.completeYourProfileScreen
                     );
                   },
                   style: ElevatedButton.styleFrom(

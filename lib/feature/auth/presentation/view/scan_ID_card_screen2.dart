@@ -1,9 +1,8 @@
 import 'package:camera/camera.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
-
 import '../../../../core/global_widgets/Custom_text.dart';
-import '../../../../core/route/route.dart';
+import '../../../../core/route/route_name.dart';
 import '../viewModel/scan_id_provider.dart';
 
 class ScanIdCardScreen2 extends ConsumerStatefulWidget {
@@ -117,7 +116,7 @@ class _ScanIdCardScreenState extends ConsumerState<ScanIdCardScreen2> {
                           onPressed: () {
                             Navigator.pushNamed(
                               context,
-                              AppRoutes.scanIdCardScreen1
+                                RouteName.scanIdCardScreen1
                             );
                           },
                           style: ElevatedButton.styleFrom(
@@ -142,7 +141,7 @@ class _ScanIdCardScreenState extends ConsumerState<ScanIdCardScreen2> {
                           onPressed: () {
                             Navigator.pushNamed(
                               context,
-                              AppRoutes.confirmIdentityScreen
+                                RouteName.confirmIdentityScreen
                             );
                           },
                           style: ElevatedButton.styleFrom(
