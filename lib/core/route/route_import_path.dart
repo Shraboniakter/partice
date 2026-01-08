@@ -3,6 +3,8 @@ import 'package:flutter/material.dart';
 import 'package:partice/core/route/route_name.dart';
 import 'package:partice/feature/auth/presentation/view/complete_your_profile_screen.dart';
 import 'package:partice/feature/auth/presentation/view/confirm_Identity_screen.dart';
+import 'package:partice/feature/auth/presentation/view/congratulation_screen.dart';
+import 'package:partice/feature/auth/presentation/view/create_a_new_password_screen.dart';
 import 'package:partice/feature/auth/presentation/view/create_account_screen.dart';
 import 'package:partice/feature/auth/presentation/view/email_verification_screen.dart';
 import 'package:partice/feature/auth/presentation/view/forgot_password_email_screen.dart';

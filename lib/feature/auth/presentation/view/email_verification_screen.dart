@@ -61,7 +61,7 @@ class EmailVerificationScreen extends StatelessWidget {
                 onPressed: () {
                   Navigator.pushNamed(
                     context,
-                    RouteName.emailVerificationScreen,
+                    RouteName.createANewPasswordScreen
                   );
                 },
                 style: ElevatedButton.styleFrom(

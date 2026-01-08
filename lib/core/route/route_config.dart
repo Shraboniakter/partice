@@ -36,6 +36,10 @@ class AppRouter {
         return MaterialPageRoute(builder: (_) => const PhoneVerificationScreen());
       case RouteName.homeScreen:
         return MaterialPageRoute(builder: (_) => const HomeScreen());
+      case RouteName.congratulationScreen:
+        return MaterialPageRoute(builder: (_) => const CongratulationScreen());
+      case RouteName.createANewPasswordScreen:
+        return MaterialPageRoute(builder: (_) =>  CreateANewPasswordScreen());
 
 
       default:

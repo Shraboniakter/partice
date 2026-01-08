@@ -16,5 +16,8 @@ class RouteName {
   static const emailVerificationScreen= '/ emailVerificationScreen';
   static const phoneVerificationScreen= '/ phoneVerificationScreen';
   static const homeScreen= '/ homeScreen';
+  static const congratulationScreen= '/ congratulationScreen';
+  static const createANewPasswordScreen= '/ createANewPasswordScreen';
+
 
 }
